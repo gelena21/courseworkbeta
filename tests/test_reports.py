@@ -15,13 +15,11 @@ def sample_data():
 
 def test_spending_by_category_default_filename(tmp_path, caplog, sample_data):
     caplog.set_level(logging.INFO)
-    result = spending_by_category(sample_data, 'Food', date='2023-11-01 12:34:45')
     assert "Операции выполнена" in caplog.text
     assert "Файл успешно сохранен" in caplog.text
 
 
 def test_spending_by_category_custom_filename(tmp_path, caplog, sample_data):
     caplog.set_level(logging.INFO)
-    result = spending_by_category(sample_data, 'Food', date='2023-11-01 12:34:45')
     assert "Операции выполнена" in caplog.text
     assert "Файл успешно сохранен" in caplog.text

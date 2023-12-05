@@ -1,6 +1,6 @@
 import json
 from src.utils import greeting
-from src.views import generate_json_response, EX_R_API_KEY
+from src.views import generate_json_response
 from src.services import invest_copilka, transactions_dict
 import pytest
 from settings import OPERATIONS_PATH, OPERATIONS_PATH_2

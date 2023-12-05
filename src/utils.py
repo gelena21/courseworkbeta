@@ -106,7 +106,7 @@ def cashback(cards: List[Dict[str, float]]) -> float:
     return sum(card["Сумма операции"] * 0.01 for card in cards)
 
 
-def top_transactions(transactions_df: pd.DataFrame) -> List[Dict[str, Union[str, int]]]:
+def top_transactions(transactions_df: pd.DataFrame) -> List[Dict[str, Union[str, int, None]]]:
     """
     Возвращает топ-5 транзакций по сумме платежа.
 
